@@ -32,8 +32,7 @@ function addTwo(num : number){
 addTwo(5);
 // In typeScript Default Value Must Be Provided while Passing The Function
 function SignUp(name :String  , Email: String , Password  = "I Love You Robin" ){
-
-
+  console.log(name,Email,Password);
 }
 
 SignUp("Sunny","Sunny@gupta.com");
