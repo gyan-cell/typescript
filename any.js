@@ -15,9 +15,7 @@
 // }
 // hero = getHero();
 //
-
 // Bad Practice
-
 // function addTwo(num){
 //   return num + 2;
 // }
@@ -43,36 +41,23 @@
 //   return "Hello";
 //   // return num + 2;
 // }
-
 // function addTwo(num: number): number {
 //   // Good Boy Method
 //   return num + 2;
 // }
-
 // In typeScript Default Value Must Be Provided while Passing The Function
-function getVale(myVal: number) {
-  if (myVal > 5) {
-    return true;
-  }
-  return "Hahaha";
-};
-
-const heros = ["Thor", "SpiderMan", "Batman", "Flash"];
-
+function getVale(myVal) {
+    if (myVal > 5) {
+        return true;
+    }
+    return "Hahaha";
+}
+;
+var heros = ["Thor", "SpiderMan", "Batman", "Flash"];
 // heros.map((Hahaha) =>{
 //   return `Hero is ${Hahaha}`
 // })
-heros.map((Hahaha): string => {
-  console.log(`Hero is ${Hahaha}`);
-  return `Hero is ${Hahaha}`;
+heros.map(function (Hahaha) {
+    console.log("Hero is ".concat(Hahaha));
+    return "Hero is ".concat(Hahaha);
 });
-
-// Another Good Practice
-//
-function consoleError(errMsg:string):void{
-  console.log(errMsg);
-}
-
-function handleError(errMsg:string):never{
-  throw new Error(errMsg);
-}
