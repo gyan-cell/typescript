@@ -17,7 +17,7 @@
 // This is more Precise and proffesional way
 class User {
   //this.city is only accessible in class
-  private _courseCount = 1
+  protected _courseCount = 1
   constructor(
     public email: string,
     private name: string,
@@ -56,5 +56,15 @@ class User {
 // the setter function is automatically called with the assigned value.
 //
 const gyan = new User("gyan@gmail.com", "Gyanranjan");
-
+class subUser extends User{
+  //Now This Class Wont be able To Access Private Class
+  //But  Can Access protected Class if Any Method Is Defined in parent Class using protected
+  //KeyWord then
+  //the Class Which Inherits Parent Class Can Access it that property.. 
+  isFamily:boolean = true;
+  // We Can Use this keyword Only Under The Function...
+  changeCourseCount(){
+    this._courseCount = this._courseCount +1;
+  }
+}
 // gyan.city = "Boisar";

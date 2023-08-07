@@ -55,4 +55,18 @@ class User {
 // the setter function is automatically called with the assigned value.
 //
 const gyan = new User("gyan@gmail.com", "Gyanranjan");
+class subUser extends User {
+    constructor() {
+        super(...arguments);
+        //Now This Class Wont be able To Access Private Class
+        //But  Can Access protected Class if Any Method Is Defined in parent Class using protected
+        //KeyWord then
+        //the Class Which Inherits Parent Class Can Access it that property.. 
+        this.isFamily = true;
+    }
+    // We Can Use this keyword Only Under The Function...
+    changeCourseCount() {
+        this._courseCount = this._courseCount + 1;
+    }
+}
 // gyan.city = "Boisar";
