@@ -6,16 +6,16 @@ interface User {
   // startTrial:()=> string // A function which will return string
   startTrial(): string; // A function which will return string
   // both are correct
-  getCoupon(coupon:string):number;
-  isChunni : boolean;
+  getCoupon(coupon: string): number;
+  isChunni: boolean;
 }
 // We Can Do this Too Reopening of the interface
 interface User {
-  githubToken : string
+  githubToken: string;
 }
 
-interface Admin extends User{
-  role:"admin"|"learner"
+interface Admin extends User {
+  role: "admin" | "learner";
 }
 
 const gyan: Admin = {
@@ -25,13 +25,13 @@ const gyan: Admin = {
   startTrial: () => {
     return "Hello";
   },
-  getCoupon:(coupon : "gyanhumain")=> {
+  getCoupon: (coupon: "gyanhumain") => {
     const newC = coupon;
     return 3;
   },
-  githubToken:"hjfdvhjl",
-  role:"admin",
-  isChunni:true
+  githubToken: "hjfdvhjl",
+  role: "admin",
+  isChunni: true,
 };
 
-//difference btw interface and type is only about how we combine two types or interfaces 
+//difference btw interface and type is only about how we combine two types or interfaces
