@@ -44,9 +44,17 @@ function getSearchProducts<T>(array: T[]): T {
   return array[myIndex];
 }
 
-// Generic Arrow Function 
-const getMoreSearchProduct = <T>(products:T[]):T=>{
+// Generic Arrow Function
+const getMoreSearchProduct = <T>(products: T[]): T => {
   //Doing Some Database Operration;;
   const myIndex = 4;
   return products[myIndex];
-}
+};
+
+//while Working With React U Wanna Do This To Make Sure
+//Compiler do Not Get Confused With jsx
+const getMoreSearchProducts = <T>(products: T[]): T => {
+  //Doing Some Database Operration;;
+  const myIndex = 4;
+  return products[myIndex];
+};
