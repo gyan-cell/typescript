@@ -1,5 +1,5 @@
 // From Here On We will Learn about Classes...
-// Not a Correct but also a way to Write TypeScript
+// Not a  inCorrect but also a way to Write TypeScript
 // class User {
 //   email: string;
 //   name: string;
